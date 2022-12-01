@@ -1,4 +1,4 @@
 #!/bin/sh
 
-sum = $(($1 + $2))
+sum=$(($1 + $2))
 echo "sum = $sum"
