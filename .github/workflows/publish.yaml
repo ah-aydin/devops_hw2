@@ -11,7 +11,7 @@ jobs:
         registry: ghcr.io
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
-    - name: Build the hello-docker Docker image
+    - name: Build docker image for hw1_not_ready (without giving it the optional argument IS_READY=true)
       run: |
         docker build . --tag ghcr.io/ah-aydin/hw1_not_ready:latest
         docker push ghcr.io/ah-aydin/hw1_not_ready:latest
